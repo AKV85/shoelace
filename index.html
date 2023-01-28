@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/shoelace.css">
+
+    <link
+            rel="stylesheet"
+            media="(prefers-color-scheme:dark)"
+            href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/dark.css"
+            onload="document.documentElement.classList.add('sl-theme-dark');"
+    />
+    <script type="module"
+            src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js">
+
+    </script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img
+                src="https://www.mzirafos.lt/wp-content/uploads/2016/11/12186728_967262730007692_8312156019554980854_o.jpg"
+                alt="skani pica"
+        >
+    </div>
+    <div class="slogan"><h1>Skaniausias gruodžio įvykis</h1><br>
+    </div>
+    <sl-tag variant="neutral">Gruodžio 27-29 d. Klaipėda, Jono kalnelis</sl-tag>
+    <nav>
+        <ul type="none">
+            <li>
+                <div style="display: flex; align-items: center; height: 2rem;">
+                    <sl-button size="large" pill href="index.html">Pagerindinis</sl-button>
+                    <sl-divider vertical></sl-divider>
+                    <sl-button size="large" pill href="dalyviai.html">Dalyviai</sl-button>
+                    <sl-divider vertical></sl-divider>
+                    <sl-button size="large" pill href="renginiai.html">Renginiai</sl-button>
+                    <sl-divider vertical></sl-divider>
+                    <sl-button size="large" pill href="vieta.html">Vieta</sl-button>
+                    <sl-divider vertical></sl-divider>
+                    <sl-button size="large" pill href="reg.html">Registracija</sl-button>
+                    <sl-divider vertical></sl-divider>
+                    <sl-button size="large" pill href="taisykles.html">Taisyklės</sl-button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="name"><h1>Picų degustacijos festivalis</h1></div>
+    <div class="intro">
+        <p>Pirmą kartą Lietuvoje įvyks picų degustacijos festivalis. Į Klaipėdą suvažiuos įvairių šalių
+            kepėjai ir virėjai.Jie pademonstruos savo įgūdžius ir pamalonins savo kūriniais visus norinčius,kurie atvyks
+            į
+            renginį,kuris vyks ant Jono kalnelio gruodžio 27-29dd. Maloniai prašome atvykti.
+            Į renginį bus galima patekti su išankstine registracija.<br><br>
+            <sl-button size="large" pill href="kontaktai.html">Registracija</sl-button>
+        </p>
+        <div class="avatar-group">
+            <sl-avatar
+                    image="https://images.unsplash.com/photo-1490150028299-bf57d78394e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80&crop=right"
+                    label="Avatar 1 of 4"
+            ></sl-avatar>
+
+            <sl-avatar
+                    image="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=left&q=80"
+                    label="Avatar 2 of 4"
+            ></sl-avatar>
+
+            <sl-avatar
+                    image="https://images.unsplash.com/photo-1456439663599-95b042d50252?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=left&q=80"
+                    label="Avatar 3 of 4"
+            ></sl-avatar>
+
+            <sl-avatar
+                    image="https://images.unsplash.com/flagged/photo-1554078875-e37cb8b0e27d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&crop=top&q=80"
+                    label="Avatar 4 of 4"
+            ></sl-avatar>
+        </div>
+
+        <style>
+            .avatar-group sl-avatar:not(:first-of-type) {
+                margin-left: -1rem;
+            }
+
+            .avatar-group sl-avatar::part(base) {
+                border: solid 2px var(--sl-color-neutral-0);
+            }
+        </style>
+        <div style="text-align: center;">
+            <sl-divider style="--width: 4px;"></sl-divider>
+
+        </div>
+    </div>
+    <div class="pic1"
+         style="text-align: center;">
+        <sl-card class="card-overview">
+            <img
+                    slot="image"
+                    src="https://s1.15min.lt/images/photos/2016/10/20/original/img_7570-5808c3244be1b.jpg"
+                    alt="Dalyviu atvaizdas"
+            />
+
+            <strong>DALYVIAI<br/><br>
+                Garsus picų kepėjai</strong><br/>
+            <small>6 weeks old</small>
+
+            <div slot="footer">
+                <sl-details summary="Placiau">
+                    Taip pat mes galėsim pamatyti ir kepėjus iš
+                    kaimyninių šalių, tokių kaip Lenkija ir Latvija.
+                </sl-details>
+                <sl-rating></sl-rating>
+            </div>
+        </sl-card>
+
+        <style>
+            .card-overview {
+                max-width: 300px;
+            }
+
+            .card-overview small {
+                color: var(--sl-color-neutral-500);
+            }
+
+            .card-overview [slot='footer'] {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        </style>
+    </div>
+    <div class="pic2"
+         style="text-align: center;">
+        <sl-card class="card-overview">
+            <img
+                    slot="image"
+                    src="https://i0.wp.com/kaunas.kasvyksta.lt/wp-content/uploads/2016/07/Bless-pizza-5.jpg?w=1500&ssl=1"
+                    alt="Picos atvaizdas"
+            />
+
+            <strong>PROGRAMA<br><br>
+                3 smagios dienos</strong><br/>
+            <small>6 weeks old</small>
+
+            <div slot="footer">
+                <sl-details summary="Placiau">
+                    Jūs galėsite sudalyvauti degustacijose. Taip pat planuojami įvairus atrakcionai ir koncertai.
+                    Muzika, picos ir
+                    daug įžymių žmonių.<br/>
+                </sl-details>
+                <sl-rating></sl-rating>
+            </div>
+        </sl-card>
+
+        <style>
+            .card-overview {
+                max-width: 300px;
+            }
+
+            .card-overview small {
+                color: var(--sl-color-neutral-500);
+            }
+
+            .card-overview [slot='footer'] {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        </style>
+    </div>
+    <div class="pic3"
+         style="text-align: center;"
+
+    >
+        <sl-card class="card-overview">
+            <img
+                    slot="image"
+                    src="https://pilotas.lt/wp-content/uploads/2020/02/jono_kl_200200_e01_xxx.jpg"
+                    alt="Jono kalnelio atvaizdas"
+            />
+
+            <strong>VIETA<br><br>
+                Jono kalnelis</strong><br/>
+            <small>6 weeks old</small>
+
+            <div slot="footer">
+                <sl-details summary="Placiau">
+                    Jono kalnelis – vieta, kur vyksta daug Klaipėdos bendruomenės susitikimų, įskaitant Jūros šventės
+                    renginius.
+                    Čia minimos daug įvairių švenčių, skamba muzika..<br/>
+                </sl-details>
+                <sl-rating></sl-rating>
+            </div>
+        </sl-card>
+
+        <style>
+            .card-overview {
+                max-width: 300px;
+            }
+
+            .card-overview small {
+                color: var(--sl-color-neutral-500);
+            }
+
+            .card-overview [slot='footer'] {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        </style>
+    </div>
+
+</main>
+<aside>
+    <div class="reklama">1 reklama</div>
+    <div class="reklama">2 reklama</div>
+    <div class="reklama">3 reklama</div>
+</aside>
+<section>
+    dar daugd reklamos
+</section>
+<footer>
+    <div class="footerRights"><b>Visos teises saugomos &copy; 2022</b>
+    </div>
+    <nav>
+        <ul type="none">
+            <li>
+                <a href="index.html">Pagrindinis</a>
+                <a href="dalyviai.html">Dalyviai</a>
+                <a href="renginiai.html">Renginiai</a>
+                <a href="vieta.html">Vieta</a>
+                <a href="reg.html">Registracija</a>
+                <a href="kontaktai.html">Kontaktai</a>
+                <a href="taisykles.html">Taisykles</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

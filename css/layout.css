@@ -1,0 +1,111 @@
+body {
+    display: grid;
+    grid-template-areas:
+        'x y y w'
+        'x center center w'
+        'x center center w'
+        'x center center w'
+        'x center center w'
+        'x z z w';
+    grid-gap: 10px;
+    grid-template-rows:auto;
+    grid-template-columns: 150px auto auto 150px;
+}
+
+body > header {
+    grid-area: y;
+}
+
+body > footer {
+    grid-area: z;
+    text-align: right;
+}
+
+body > aside {
+    grid-area: x;
+    background-color: white;
+}
+
+body > main {
+    grid-area: center;
+    background-color: white;
+}
+
+body > section {
+    grid-area: w;
+    background-color: white;
+    grid-template-rows:auto;
+    grid-template-columns: 150px auto auto 150px
+}
+
+header {
+    display: grid;
+    grid-template-areas: 'l s s '
+                         'l n n'
+}
+
+header .logo {
+    grid-area: l;
+}
+
+header .slogan {
+    grid-area: s;
+    display: flex;
+}
+
+header nav {
+    display: flex;
+    grid-area: n;
+    align-items: start;
+    justify-content: start;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+    'a a a'
+    'b b b'
+    'd e f';
+    grid-gap: 10px;
+
+}
+
+main > .name {
+    grid-area: a;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    image-orientation: flip;
+}
+
+main > .intro {
+    grid-area: b;
+    justify-content: center;
+    text-align: center;
+}
+
+
+main > .pic1 {
+    grid-area: d;
+    display: grid;
+    place-items: center;
+    text-align: left;
+    grid-gap: inherit;
+}
+
+main > .pic2 {
+    grid-area: e;
+    display: grid;
+    place-items: center;
+    text-align: left;
+}
+
+main > .pic3 {
+    grid-area: f;
+    display: grid;
+    place-items: center;
+    text-align: left;
+}
+
+
+
